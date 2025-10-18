@@ -1,5 +1,0 @@
-id,label,type,description,epoch,tradition,region,start_year,end_year,uri,sources,tags
-person:plato,Plató,Person,"Filòsof grec clàssic, fundador de l'Acadèmia.",Antiguitat,Platonisme,Grècia,-427,-347,https://viaf.org/viaf/54144752/,Diàlegs de Plató;VIAF,metafísica|epistemologia|ètica
-person:aristotle,Aristòtil,Person,"Alumne de Plató, fonamenta l'escolàstica i la lògica.",Antiguitat,Aristotelisme,Grècia,-384,-322,https://viaf.org/viaf/75121530/,Organon;VIAF,lògica|metafísica|biologia
-concept:forms,Teoria de les Idees,Concept,Doctrina platònica de les formes/idees.,Antiguitat,Platonisme,,-387,,,República VI-VII,ontologia|epistemologia
-work:metaphysics,Metafísica,Work,Obra d'Aristòtil sobre l'ésser i els primers principis.,Antiguitat,Aristotelisme,,-330,,,"Aristòtil, Metafísica",ontologia|causalitat

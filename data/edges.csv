@@ -1,5 +1,0 @@
-id,source,target,type,direction,weight,since,until,evidence,source_ref
-e1,person:plato,person:aristotle,teacher_of,directed,0.9,-367,-347,Tradició històrica,"Diógenes Laerci, Vides i opinions"
-e2,person:plato,concept:forms,originates,directed,0.8,-387,,República VI-VII,"Plató, República"
-e3,person:aristotle,concept:forms,critiques,directed,0.7,-330,,"Aristòtil, Metafísica, Llibre A",Metafísica 987a29–b9
-e4,work:metaphysics,concept:forms,discusses,directed,0.6,-330,,Contingut de l'obra,
