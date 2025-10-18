@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-10-18">
+    <creator>NetworkX 2.8.8</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="10" title="direction" type="string" />
+      <attribute id="11" title="since" type="long" />
+      <attribute id="12" title="until" type="double" />
+      <attribute id="13" title="evidence" type="string" />
+      <attribute id="14" title="source_ref" type="string" />
+      <attribute id="15" title="networkx_key" type="long" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="type" type="string" />
+      <attribute id="1" title="description" type="string" />
+      <attribute id="2" title="epoch" type="string" />
+      <attribute id="3" title="tradition" type="string" />
+      <attribute id="4" title="region" type="string" />
+      <attribute id="5" title="start_year" type="long" />
+      <attribute id="6" title="end_year" type="double" />
+      <attribute id="7" title="uri" type="string" />
+      <attribute id="8" title="sources" type="string" />
+      <attribute id="9" title="tags" type="string" />
+    </attributes>
+    <nodes>
+      <node id="person:plato" label="Plató">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+          <attvalue for="1" value="Filòsof grec clàssic, fundador de l'Acadèmia." />
+          <attvalue for="2" value="Antiguitat" />
+          <attvalue for="3" value="Platonisme" />
+          <attvalue for="4" value="Grècia" />
+          <attvalue for="5" value="-427" />
+          <attvalue for="6" value="-347.0" />
+          <attvalue for="7" value="https://viaf.org/viaf/54144752/" />
+          <attvalue for="8" value="Diàlegs de Plató;VIAF" />
+          <attvalue for="9" value="metafísica|epistemologia|ètica" />
+        </attvalues>
+      </node>
+      <node id="person:aristotle" label="Aristòtil">
+        <attvalues>
+          <attvalue for="0" value="Person" />
+          <attvalue for="1" value="Alumne de Plató, fonamenta l'escolàstica i la lògica." />
+          <attvalue for="2" value="Antiguitat" />
+          <attvalue for="3" value="Aristotelisme" />
+          <attvalue for="4" value="Grècia" />
+          <attvalue for="5" value="-384" />
+          <attvalue for="6" value="-322.0" />
+          <attvalue for="7" value="https://viaf.org/viaf/75121530/" />
+          <attvalue for="8" value="Organon;VIAF" />
+          <attvalue for="9" value="lògica|metafísica|biologia" />
+        </attvalues>
+      </node>
+      <node id="concept:forms" label="Teoria de les Idees">
+        <attvalues>
+          <attvalue for="0" value="Concept" />
+          <attvalue for="1" value="Doctrina platònica de les formes/idees." />
+          <attvalue for="2" value="Antiguitat" />
+          <attvalue for="3" value="Platonisme" />
+          <attvalue for="4" value="" />
+          <attvalue for="5" value="-387" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="República VI-VII" />
+          <attvalue for="9" value="ontologia|epistemologia" />
+        </attvalues>
+      </node>
+      <node id="work:metaphysics" label="Metafísica">
+        <attvalues>
+          <attvalue for="0" value="Work" />
+          <attvalue for="1" value="Obra d'Aristòtil sobre l'ésser i els primers principis." />
+          <attvalue for="2" value="Antiguitat" />
+          <attvalue for="3" value="Aristotelisme" />
+          <attvalue for="4" value="" />
+          <attvalue for="5" value="-330" />
+          <attvalue for="6" value="" />
+          <attvalue for="7" value="" />
+          <attvalue for="8" value="Aristòtil, Metafísica" />
+          <attvalue for="9" value="ontologia|causalitat" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="person:plato" target="person:aristotle" id="e1" weight="0.9" type="teacher_of">
+        <attvalues>
+          <attvalue for="10" value="directed" />
+          <attvalue for="11" value="-367" />
+          <attvalue for="12" value="-347.0" />
+          <attvalue for="13" value="Tradició històrica" />
+          <attvalue for="14" value="Diógenes Laerci, Vides i opinions" />
+          <attvalue for="15" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="person:plato" target="concept:forms" id="e2" weight="0.8" type="originates">
+        <attvalues>
+          <attvalue for="10" value="directed" />
+          <attvalue for="11" value="-387" />
+          <attvalue for="12" value="" />
+          <attvalue for="13" value="República VI-VII" />
+          <attvalue for="14" value="Plató, República" />
+          <attvalue for="15" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="person:aristotle" target="concept:forms" id="e3" weight="0.7" type="critiques">
+        <attvalues>
+          <attvalue for="10" value="directed" />
+          <attvalue for="11" value="-330" />
+          <attvalue for="12" value="" />
+          <attvalue for="13" value="Aristòtil, Metafísica, Llibre A" />
+          <attvalue for="14" value="Metafísica 987a29–b9" />
+          <attvalue for="15" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="work:metaphysics" target="concept:forms" id="e4" weight="0.6" type="discusses">
+        <attvalues>
+          <attvalue for="10" value="directed" />
+          <attvalue for="11" value="-330" />
+          <attvalue for="12" value="" />
+          <attvalue for="13" value="Contingut de l'obra" />
+          <attvalue for="14" value="" />
+          <attvalue for="15" value="0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

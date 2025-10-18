@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "id": "person:plato",
+      "label": "Plató",
+      "type": "Person",
+      "description": "Filòsof grec clàssic, fundador de l'Acadèmia.",
+      "epoch": "Antiguitat",
+      "tradition": "Platonisme",
+      "region": "Grècia",
+      "start_year": -427,
+      "end_year": -347.0,
+      "uri": "https://viaf.org/viaf/54144752/",
+      "sources": "Diàlegs de Plató;VIAF",
+      "tags": "metafísica|epistemologia|ètica"
+    },
+    {
+      "id": "person:aristotle",
+      "label": "Aristòtil",
+      "type": "Person",
+      "description": "Alumne de Plató, fonamenta l'escolàstica i la lògica.",
+      "epoch": "Antiguitat",
+      "tradition": "Aristotelisme",
+      "region": "Grècia",
+      "start_year": -384,
+      "end_year": -322.0,
+      "uri": "https://viaf.org/viaf/75121530/",
+      "sources": "Organon;VIAF",
+      "tags": "lògica|metafísica|biologia"
+    },
+    {
+      "id": "concept:forms",
+      "label": "Teoria de les Idees",
+      "type": "Concept",
+      "description": "Doctrina platònica de les formes/idees.",
+      "epoch": "Antiguitat",
+      "tradition": "Platonisme",
+      "region": "",
+      "start_year": -387,
+      "end_year": "",
+      "uri": "",
+      "sources": "República VI-VII",
+      "tags": "ontologia|epistemologia"
+    },
+    {
+      "id": "work:metaphysics",
+      "label": "Metafísica",
+      "type": "Work",
+      "description": "Obra d'Aristòtil sobre l'ésser i els primers principis.",
+      "epoch": "Antiguitat",
+      "tradition": "Aristotelisme",
+      "region": "",
+      "start_year": -330,
+      "end_year": "",
+      "uri": "",
+      "sources": "Aristòtil, Metafísica",
+      "tags": "ontologia|causalitat"
+    }
+  ],
+  "links": [
+    {
+      "source": "person:plato",
+      "target": "person:aristotle",
+      "id": "e1",
+      "type": "teacher_of",
+      "direction": "directed",
+      "weight": 0.9,
+      "since": -367,
+      "until": -347.0,
+      "evidence": "Tradició històrica",
+      "source_ref": "Diógenes Laerci, Vides i opinions"
+    },
+    {
+      "source": "person:plato",
+      "target": "concept:forms",
+      "id": "e2",
+      "type": "originates",
+      "direction": "directed",
+      "weight": 0.8,
+      "since": -387,
+      "until": "",
+      "evidence": "República VI-VII",
+      "source_ref": "Plató, República"
+    },
+    {
+      "source": "person:aristotle",
+      "target": "concept:forms",
+      "id": "e3",
+      "type": "critiques",
+      "direction": "directed",
+      "weight": 0.7,
+      "since": -330,
+      "until": "",
+      "evidence": "Aristòtil, Metafísica, Llibre A",
+      "source_ref": "Metafísica 987a29–b9"
+    },
+    {
+      "source": "work:metaphysics",
+      "target": "concept:forms",
+      "id": "e4",
+      "type": "discusses",
+      "direction": "directed",
+      "weight": 0.6,
+      "since": -330,
+      "until": "",
+      "evidence": "Contingut de l'obra",
+      "source_ref": ""
+    }
+  ]
+}
